@@ -7,16 +7,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <!-- PAgn chekc ko lang ng bg -->
   <style>
 
 
   </style>
-  <script src=
-  "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-    
+
 </head>
 <body>
     
@@ -106,7 +102,7 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-light">
                         <li><a class="dropdown-item" href="#cake">cake</a></li>
-                        <li><a class="dropdown-item" href="#doughnut">donut</a></li>
+                        <li><a class="dropdown-item" href="#donut">donut</a></li>
                         <li><a class="dropdown-item" href="#pie">pie</a></li>
                       </ul>
                     </li>
@@ -128,17 +124,17 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-grid gap-2 col-3 mx-auto">
-              <button type="button" class="btn btn-outline-danger" onclick="location.href='index.html#cake'">EXPLORE CAKE RECIPE</button>
+              <button type="button" class="btn btn-outline-danger">EXPLORE CAKE RECIPE</button>
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-grid gap-2 col-3 mx-auto">
-              <button type="button" class="btn btn-outline-danger"onclick="location.href='index.html#doughnut'">EXPLORE DONUT RECIPE</button>
+              <button type="button" class="btn btn-outline-danger">EXPLORE DONUT RECIPE</button>
             </div>
           </div>
           <div class="carousel-item">
             <div class="d-grid gap-2 col-3 mx-auto">
-              <button type="button" class="btn btn-outline-danger"onclick="location.href='index.html#pie'">EXPLORE PIE RECIPE</button>
+              <button type="button" class="btn btn-outline-danger">EXPLORE PIE RECIPE</button>
             </div>
           </div>
         </div>
@@ -160,7 +156,7 @@
     <section id="quote">
                  <!-- bg url ba rito? -->
       <div class="container">
-        <h3 class="quote1">“You don’t have to love cooking to cook, but you have to do more than love baking to bake. You have to bake out of love.” - Tom Junod</h3>
+        <h3>“You don’t have to love cooking to cook, but you have to do more than love baking to bake. You have to bake out of love.” - Tom Junod</h3>
       </div>
     </section>
     
@@ -169,7 +165,7 @@
         <h1>Cakes</h1>
         <div class="container">
           <div class="card" style="width: 18rem;">
-              <img src="images/home/cake.png" class="card-img-top1" alt="...">
+              <img src="images/home/cake.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Chocolate Cake</h5>
                 <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -177,7 +173,7 @@
           </div>
 
           <div class="card" style="width: 18rem;">
-              <img src="images/home/lemon-blueberry-cake.png" class="card-img-top1" alt="...">
+              <img src="images/home/lemon-blueberry-cake.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Lemon Blueberry Cake</h5>
                 <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -185,7 +181,7 @@
           </div>
 
           <div class="card" style="width: 18rem;">
-              <img src="images/home/chocolate-raspberry-cheesecake.png" class="card-img-top1" alt="...">
+              <img src="images/home/chocolate-raspberry-cheesecake.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Chocolate Raspberry Cheesecake</h5>
                 <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -201,60 +197,94 @@
     <section id="cake-recipe">
       <img src="images/home/recipe.png" alt="" class="banner-img"> 
       <h1>Cake Recipes</h1>
-      <div class="container reveal">
-        <div class="accordion" id="accordionExample">
+      <div class="container">
+        <div class="accordion" id="accordionCake">
             <div class="accordion-item" id="chocolate-cake">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneCake" aria-expanded="true" aria-controls="collapseOneCake">
                   Chocolate Cake
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOneCake" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionCake">
                 <div class="accordion-body">
                    
                     <div class="container">
+
                         <div class="row">
-                          <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                            <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+
+                          <div class="col-4" >
+                            <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                                <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                                <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                            </div>
+
+                            <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                              <img src="images/home/chocalate-cake_accordion.png" class="img-fluid" alt="...">
+                            </div>
+
+                            <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                              <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">1 ¾ cups (219 g) all-purpose flour</li>
+                                  <li class="list-group-item">2 cups (400 g) granulated sugar</li>
+                                  <li class="list-group-item">¾ cup (90 g) good quality unsweetened cocoa powder</li>
+                                  <li class="list-group-item">2 teaspoons baking soda</li>
+                                  <li class="list-group-item">1 teaspoon baking powder</li>
+
+                                  <li class="list-group-item">1 teaspoon kosher salt</li>
+                                  <li class="list-group-item">1 cup (240 g) buttermilk, room temperature</li>
+                                  <li class="list-group-item">½ cup (112 g) vegetable oil</li>
+                                  <li class="list-group-item">2 large eggs, room temperature</li>
+                                  <li class="list-group-item">2 teaspoons McCormick pure vanilla extract</li>
+
+                                  <li class="list-group-item">1 cup (237 g) freshly brewed hot coffee, regular or decaf, or hot water chocolate buttercream frosting</li>
+                                </ul>
+                            </div>
+
                           </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="images/home/chocalate-cake_accordion.png" class="img-fluid" alt="...">
+                          <div class="col-8" style="text-align: center; padding: 5%;">
+                            <div class="row">
+                              <label class="rounded-pill bg-primary text-white">Instructions</label>
+                              <ul style="list-style-type: none;padding: 2% 0;">
+                                  <p class="instructions"> 
+                                    1. Preheat the oven to 350°F. Spray 2, 8-inch x 3-inch round cake pans with nonstick cooking spray. (8-inch cake pans with shorter sides may cause an overflow in your oven.) Set aside.
+                                  </p>
+                                  <p class="instructions"> 
+                                    2. To the bowl of a stand mixer, add the flour, sugar, cocoa, baking soda, baking powder, and salt. Mix to combine.
+                                  </p>
+                                  <p class="instructions"> 
+                                    3. In a separate bowl, combine the buttermilk, oil, eggs, and vanilla.
+                                  </p>
+                                  <p class="instructions"> 
+                                    4. With the mixer on low speed, slowly add the wet ingredients to the dry. With the mixer still on low, add the coffee and stir just to combine, scraping the bottom of the bowl with a rubber spatula.
+                                  </p>
+                                  <p class="instructions"> 
+                                    5. Pour the batter into the prepared pans and bake for 30-40 minutes, or until a cake tester or toothpick comes out mostly clean with no wet batter.
+                                  </p>
+                                  <p class="instructions"> 
+                                    6. Let the cakes cool in the pans for 30 minutes. Then, turn them out onto a cooling rack to let them cool completely.
+                                  </p>
+                                  <p class="instructions"> 
+                                    7. Frost the cake with chocolate buttercream frosting.
+                                  </p>
+                                </ul>
                             </div>
-                            <div class="col-8">
-                                <label class="rounded-pill bg-primary text-white">Instructions </label>
-                                <ul>
-                                    <li>An item</li>
-                                    <li>A second item</li>
-                                    <li>A third item</li>
-                                    <li>A fourth item</li>
-                                    <li>And a fifth one</li>
-                                  </ul>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <label class="rounded-pill bg-primary text-white">Ingredients </label>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A fourth item</li>
-                                    <li class="list-group-item">And a fifth one</li>
-                                  </ul>
-                            </div>
+                          
 
                             <!-- Video -->
-                            <div class="col-8">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
-                                  </div>
+                            <div class="row">
+                              <div class="ratio ratio-16x9">
+                                <video class="embed-responsive-item" controls autoplay muted>
+                                  <source src="videos/Chocolate Cake.m4v" type="video/mp4">
+                                  Your browser does not support the video tag.
+                                </video>
+                              </div>
                             </div>
-                        </div>
+
+                          </div>
+
+                      </div>
                     </div>
                       
 
@@ -264,17 +294,17 @@
 
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoCake" aria-expanded="false" aria-controls="collapseTwoCake">
                   Lemon Blueberry Cake
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwoCake" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCake">
                 <div class="accordion-body">
                     <div class="container">
                         <div class="row">
-                          <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                            <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                          <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                           </div>
                         </div>
 
@@ -282,9 +312,9 @@
                             <div class="col-4">
                                 <img src="images/home/lemon_blueberry_accordion.png" class="img-fluid" alt="...">
                             </div>
-                            <div class="col-8">
+                            <div class="col-8" style="text-align: center;">
                                 <label class="rounded-pill bg-primary text-white">Instructions </label>
-                                <ul>
+                                <ul style="list-style-type: none;padding: 2% 0;">
                                     <li>An item</li>
                                     <li>A second item</li>
                                     <li>A third item</li>
@@ -295,9 +325,9 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-4">
-                                <label class="rounded-pill bg-primary text-white">Ingredients </label>
-                                <ul class="list-group list-group-flush">
+                            <div class="col-4" style="text-align: center;" >
+                                <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                                <ul class="list-group list-group-flush" >
                                     <li class="list-group-item">An item</li>
                                     <li class="list-group-item">A second item</li>
                                     <li class="list-group-item">A third item</li>
@@ -307,8 +337,8 @@
                             </div>
                             <!-- Video -->
                             <div class="col-8">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                                <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                    <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                                     </div>
                             </div>
                         </div>
@@ -319,17 +349,17 @@
 
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeCake" aria-expanded="false" aria-controls="collapseThreeCake">
                   Chocolate Raspberry Cheesecake
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThreeCake" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCake">
                 <div class="accordion-body">
                     <div class="container">
                         <div class="row">
-                          <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                            <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                          <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                           </div>
                         </div>
 
@@ -337,9 +367,9 @@
                             <div class="col-4">
                                 <img src="images/home/raspberry_accordion.png" class="img-fluid" alt="...">
                             </div>
-                            <div class="col-8">
-                                <label class="rounded-pill bg-primary text-white">Instructions </label>
-                                <ul>
+                            <div class="col-8" style="text-align: center;">
+                                <label class="rounded-pill bg-primary text-white">Instructions</label>
+                                <ul style="list-style-type: none;padding: 2% 0;">
                                     <li>An item</li>
                                     <li>A second item</li>
                                     <li>A third item</li>
@@ -350,8 +380,8 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-4">
-                                <label class="rounded-pill bg-primary text-white">Ingredients </label>
+                            <div class="col-4" style="text-align: center;">
+                                <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">An item</li>
                                     <li class="list-group-item">A second item</li>
@@ -362,8 +392,8 @@
                             </div>
                             <!-- Video -->
                             <div class="col-8">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                                <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                    <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                                     </div>
                             </div>
                         </div>
@@ -382,7 +412,7 @@
       <div class="container">
 
         <div class="card" style="width: 18rem;">
-            <img src="images/home/glazed-cake-doughnut.png" class="card-img-top2" alt="...">
+            <img src="images/home/glazed-cake-doughnut.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Glazed Cake Donuts</h5>
               <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -390,7 +420,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="images/home/pumpkin-doughnut.png" class="card-img-top2" alt="...">
+            <img src="images/home/pumpkin-doughnut.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Pumpkin Donuts</h5>
               <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -398,7 +428,7 @@
         </div>
 
         <div class="card" style="width: 18rem;">
-            <img src="images/home/apple-cider-doughnut.png" class="card-img-top2" alt="...">
+            <img src="images/home/apple-cider-doughnut.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Apple Cider Donuts</h5>
               <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -413,22 +443,22 @@
     <section id="donut-recipe">
       <img src="images/home/recipe.png" alt="" class="banner-img">
       <h1>Doughnut Recipes</h1>
-      <div class="container reveal">
-        <div class="accordion" id="accordionExample">
+      <div class="container">
+        <div class="accordion" id="accordionDonut">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneDonut" aria-expanded="true" aria-controls="collapseOneDonut">
               Glazed Cake Donuts
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseOneDonut" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionDonut">
             <div class="accordion-body">
                
                 <div class="container">
                     <div class="row">
-                      <div class="col-4">
-                        <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                       </div>
                     </div>
 
@@ -436,9 +466,9 @@
                         <div class="col-4">
                             <img src="images/home/glazed-cake-doughnut-accordion.png" class="img-fluid" alt="...">
                         </div>
-                        <div class="col-8">
+                        <div class="col-8" style="text-align: center;">
                             <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul>
+                            <ul style="list-style-type: none;padding: 2% 0;">
                                 <li>An item</li>
                                 <li>A second item</li>
                                 <li>A third item</li>
@@ -449,8 +479,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Ingredients </label>
+                        <div class="col-4"  style="text-align: center;">
+                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -462,8 +492,8 @@
 
                         <!-- Video -->
                         <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                               </div>
                         </div>
                     </div>
@@ -476,17 +506,17 @@
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoDonut" aria-expanded="false" aria-controls="collapseTwoDonut">
               Pumpkin Donuts
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div id="collapseTwoDonut" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDonut">
             <div class="accordion-body">
                 <div class="container">
                     <div class="row">
-                      <div class="col-4">
-                        <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                       </div>
                     </div>
 
@@ -494,9 +524,9 @@
                         <div class="col-4">
                             <img src="images/home/pumpkin-doughnut-accordion.png" class="img-fluid" alt="...">
                         </div>
-                        <div class="col-8">
+                        <div class="col-8" style="text-align: center;">
                             <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul>
+                            <ul style="list-style-type: none;padding: 2% 0;">
                                 <li>An item</li>
                                 <li>A second item</li>
                                 <li>A third item</li>
@@ -507,8 +537,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Ingredients </label>
+                        <div class="col-4" style="text-align: center;">
+                            <label class="rounded-pill bg-primary text-white"  style="margin: 3% 0;">Ingredients </label>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -519,8 +549,8 @@
                         </div>
                         <!-- Video -->
                         <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                                 </div>
                         </div>
                     </div>
@@ -531,17 +561,17 @@
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeDonut" aria-expanded="false" aria-controls="collapseThreeDonut">
               Apple Cider Donuts
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div id="collapseThreeDonut" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDonut">
             <div class="accordion-body">
                 <div class="container">
                     <div class="row">
-                      <div class="col-4">
-                        <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                       </div>
                     </div>
 
@@ -549,9 +579,9 @@
                         <div class="col-4">
                             <img src="images/home/apple-cider-doughnut-accordion.png" class="img-fluid" alt="...">
                         </div>
-                        <div class="col-8">
+                        <div class="col-8"  style="text-align: center;">
                             <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul>
+                            <ul style="list-style-type: none;padding: 2% 0;">
                                 <li>An item</li>
                                 <li>A second item</li>
                                 <li>A third item</li>
@@ -562,8 +592,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Ingredients </label>
+                        <div class="col-4" style="text-align: center;">
+                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -574,8 +604,8 @@
                         </div>
                         <!-- Video -->
                         <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                                 </div>
                         </div>
                     </div>
@@ -593,7 +623,7 @@
       <div class="container">
 
         <div class="card">
-            <img src="images/home/hutternutter-pie.png" class="card-img-top3" alt="...">
+            <img src="images/home/hutternutter-pie.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Fluffernutter Pie</h5>
               <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -601,7 +631,7 @@
         </div>
 
         <div class="card">
-            <img src="images/home/blueberry-lemon-cream-pie.png" class="card-img-top3" alt="...">
+            <img src="images/home/blueberry-lemon-cream-pie.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Blueberry Lemon Cream Pie</h5>
               <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -609,7 +639,7 @@
         </div>
 
         <div class="card">
-            <img src="images/home/cranberry-pie.png" class="card-img-top3" alt="...">
+            <img src="images/home/cranberry-pie.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cranberry Pie</h5>
               <a href="#" class="btn btn-outline-danger">See Recipe</a>
@@ -624,22 +654,22 @@
     <section id="pie-recipe">
       <img src="images/home/recipe.png" alt="" class="banner-img">
       <h1>Pie Recipes</h1>
-      <div class="container reveal">
-        <div class="accordion" id="accordionExample">
+      <div class="container">
+        <div class="accordion" id="accordionPie">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOnePie" aria-expanded="true" aria-controls="collapseOnePie">
               Fluffernutter Pie
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div id="collapseOnePie" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionPie">
             <div class="accordion-body">
                 
                 <div class="container">
                     <div class="row">
-                      <div class="col-4">
-                        <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                       </div>
                     </div>
 
@@ -647,9 +677,9 @@
                         <div class="col-4">
                             <img src="images/home/hutternutter-pie-accordion.png" class="img-fluid" alt="...">
                         </div>
-                        <div class="col-8">
+                        <div class="col-8" style="text-align: center;">
                             <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul>
+                            <ul style="list-style-type: none;padding: 2% 0;">
                                 <li>An item</li>
                                 <li>A second item</li>
                                 <li>A third item</li>
@@ -660,8 +690,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Ingredients </label>
+                        <div class="col-4" style="text-align: center;">
+                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -673,8 +703,8 @@
 
                         <!-- Video -->
                         <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                               </div>
                         </div>
                     </div>
@@ -687,17 +717,17 @@
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoPie" aria-expanded="false" aria-controls="collapseTwoPie">
               Blueberry Lemon Cream Pie
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div id="collapseTwoPie" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPie">
             <div class="accordion-body">
                 <div class="container">
                     <div class="row">
-                      <div class="col-4">
-                        <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                       </div>
                     </div>
 
@@ -705,9 +735,9 @@
                         <div class="col-4">
                             <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
                         </div>
-                        <div class="col-8">
+                        <div class="col-8"  style="text-align: center;"> 
                             <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul>
+                            <ul style="list-style-type: none;padding: 2% 0;">
                                 <li>An item</li>
                                 <li>A second item</li>
                                 <li>A third item</li>
@@ -718,8 +748,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Ingredients </label>
+                        <div class="col-4" style="text-align: center;">
+                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -730,8 +760,8 @@
                         </div>
                         <!-- Video -->
                         <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                                 </div>
                         </div>
                     </div>
@@ -742,17 +772,17 @@
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreePie" aria-expanded="false" aria-controls="collapseThreePie">
               Cranberry Pie
             </button>
           </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div id="collapseThreePie" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPie">
             <div class="accordion-body">
                 <div class="container">
                     <div class="row">
-                      <div class="col-4">
-                        <label class="rounded-pill bg-primary text-white">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white">Servings: 12 slices</label>
+                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                       </div>
                     </div>
 
@@ -760,9 +790,9 @@
                         <div class="col-4">
                             <img src="images/home/cranberry-pie-accordion.png" class="img-fluid" alt="...">
                         </div>
-                        <div class="col-8">
+                        <div class="col-8" style="text-align: center;">
                             <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul>
+                            <ul style="list-style-type: none;padding: 2% 0;">
                                 <li>An item</li>
                                 <li>A second item</li>
                                 <li>A third item</li>
@@ -773,8 +803,8 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-4">
-                            <label class="rounded-pill bg-primary text-white">Ingredients </label>
+                        <div class="col-4" style="text-align: center;">
+                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">An item</li>
                                 <li class="list-group-item">A second item</li>
@@ -785,8 +815,8 @@
                         </div>
                         <!-- Video -->
                         <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen></iframe>
+                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
+                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
                                 </div>
                         </div>
                     </div>
@@ -798,30 +828,14 @@
       </div>
     </section>
 
+
   </main>
   
   <footer>
     <p>All rights reserved.</p>
   </footer>
   
-  <a href="javascript:void(0);" id="backToTop" class="back-to-top">
-    <i class="arrow"></i><i class="arrow"></i>
-</a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src=
-"https://code.jquery.com/jquery-3.4.1.min.js">
-    </script>
-    <script src=
-"https://unpkg.com/@barba/core">
-    </script>
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js">
-    </script>
-
-    <script src="main.js"></script>
 </body>
 </html>
