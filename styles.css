@@ -210,7 +210,13 @@ header .navbar-nav {
   background: #B3DEE2 !important;
   color: #59092F !important;
 }
-
+p.instructions {
+  text-align: justify;
+  margin: 3%;
+}
+label{
+  text-align: center;
+}
 footer {
   background: #DB433B;
   color: white;
