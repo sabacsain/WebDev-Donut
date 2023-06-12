@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: Nexa Script;
+  src: url(font/NexaScript-Bold.woff);
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+header .navbar-brand {
+  width: 25%;
+}
+header svg {
+  margin-left: 10%;
+  width: auto;
+  height: 100%;
+}
+header li {
+  display: flex;
+  color: #DB433B;
+}
+header i {
+  margin: auto;
+}
+header .nav-link, header .nav-link.active {
+  color: #DB433B !important;
+}
+header .collapse {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+header .navbar-nav > li:first-child {
+  padding-left: 20%;
+}
+header .nav-item a {
+  font-size: clamp(0.4375rem, -0.1875rem + 2vw, 0.9375rem);
+}
+header .navbar-nav {
+  margin-left: 50%;
+}
+
+#landing {
+  margin-top: 5%;
+}
+#landing .carousel-item:first-child {
+  background: url(images/home/carousel-cake.png) no-repeat center;
+  height: 90vh;
+  background-size: cover;
+}
+#landing .carousel-item:nth-child(2) {
+  background: url(images/home/carousel-donut.png) no-repeat center;
+  height: 90vh;
+  background-size: cover;
+}
+#landing .carousel-item:nth-child(3) {
+  background: url(images/home/carousel-pie.png) no-repeat center;
+  height: 90vh;
+  background-size: cover;
+}
+#landing .d-grid {
+  margin-top: 30%;
+}
+#landing .d-grid button {
+  background: white;
+  color: #DB433B;
+  font-size: clamp(0.4375rem, -0.1875rem + 2vw, 0.9375rem);
+}
+#landing .d-grid button:hover {
+  background: #DB433B;
+  color: white;
+}
+
+#quote {
+  background: url(images/home/bg-quote.png) no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+}
+#quote .container {
+  margin: auto;
+  width: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#quote h3 {
+  font-family: "Nexa Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0.9375rem, -0.2344rem + 3.75vw, 1.875rem);
+  text-align: justify;
+  color: #59092F;
+}
+
+#cake, #pie, #doughnut {
+  background: url(images/home/bg-recipe.png) no-repeat center;
+  background-size: cover;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+}
+#cake .container, #pie .container, #doughnut .container {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10% auto 10% auto;
+  justify-content: space-around;
+}
+#cake .container .card, #pie .container .card, #doughnut .container .card {
+  width: 25%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#cake .container .card h5, #pie .container .card h5, #doughnut .container .card h5 {
+  height: 60px;
+  margin: auto;
+  font-family: "Nexa Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(0.625rem, -0.3125rem + 3vw, 1.375rem);
+  text-align: center;
+  color: #59092F;
+}
+#cake .container .card a, #pie .container .card a, #doughnut .container .card a {
+  width: 100%;
+  font-size: clamp(0.625rem, -0.3125rem + 3vw, 1.375rem);
+}
+#cake .container .card-body, #pie .container .card-body, #doughnut .container .card-body {
+  padding: 0;
+}
+#cake h1, #pie h1, #doughnut h1 {
+  font-family: "Nexa Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1.875rem, -1.25rem + 10vw, 4.375rem);
+  text-align: center;
+  color: #DB433B;
+  margin-top: 10%;
+}
+
+#cake-recipe, #pie-recipe, #donut-recipe {
+  padding-bottom: 10%;
+}
+#cake-recipe button, #pie-recipe button, #donut-recipe button {
+  font-family: "Nexa Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #59092F;
+}
+#cake-recipe .banner-img, #pie-recipe .banner-img, #donut-recipe .banner-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#cake-recipe h1, #pie-recipe h1, #donut-recipe h1 {
+  font-family: "Nexa Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #59092F;
+  margin-top: -9%;
+  margin-bottom: 5%;
+}
+#cake-recipe .rounded-pill, #pie-recipe .rounded-pill, #donut-recipe .rounded-pill {
+  padding: 1% 3%;
+  font-weight: bold;
+  font-size: clamp(0.5rem, -0.2031rem + 2.25vw, 1.0625rem);
+}
+#cake-recipe ul > li, #pie-recipe ul > li, #donut-recipe ul > li {
+  font-size: clamp(0.4375rem, -0.1875rem + 2vw, 0.9375rem);
+}
+
+#cake-recipe {
+  background: #EA9AB2;
+}
+#cake-recipe .rounded-pill {
+  background: #EA9AB2 !important;
+  color: #59092F !important;
+}
+
+#pie-recipe {
+  background: #EAF2D7;
+}
+#pie-recipe .rounded-pill {
+  background: #EAF2D7 !important;
+  color: #59092F !important;
+}
+
+#donut-recipe {
+  background: #B3DEE2;
+}
+#donut-recipe .rounded-pill {
+  background: #B3DEE2 !important;
+  color: #59092F !important;
+}
+
+footer {
+  background: #DB433B;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+  #landing .carousel-item {
+    height: 80vh;
+  }
+  #quote {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  #landing .carousel-item {
+    height: 60vh;
+  }
+  #quote {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  #landing .carousel-item {
+    height: 50vh;
+  }
+  #quote {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  #landing .carousel-item {
+    height: 40vh;
+  }
+  #quote {
+    height: 40vh;
+  }
+}/*# sourceMappingURL=styles.css.map */
