@@ -215,6 +215,10 @@ header .navbar-nav {
 p.instructions {
   text-align: justify;
   margin: 3%;
+  color: #59092F;
+}
+.accordion li{
+  color: #59092F;
 }
 label{
   text-align: center;
