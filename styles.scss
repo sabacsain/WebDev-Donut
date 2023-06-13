@@ -93,21 +93,24 @@ header{
 }
 
 #landing{
-    margin-top: 5%;
+    margin-top: 65px;
     margin-bottom: 17px;
 
     .carousel-item:first-child{
         background: url(images/home/carousel-cake.png) no-repeat center;
+        height: 90vh;
         background-size: cover;
     }
 
     .carousel-item:nth-child(2){
         background: url(images/home/carousel-donut.png) no-repeat center;
+        height: 90vh;
         background-size: cover;
     }
 
     .carousel-item:nth-child(3){
         background: url(images/home/carousel-pie.png) no-repeat center;
+        height: 90vh;
         background-size: cover;
     }
 
@@ -369,7 +372,7 @@ footer{
 @media  screen and (max-width:1400px) {
     #landing{
         .carousel-item{
-            height: 80vh;
+            height: 70vh !important;  
         }
     }
 
@@ -378,11 +381,18 @@ footer{
     }
 }
 
-@media  screen and (max-width:800px) {
+@media  screen and (max-width:1200px) {
     #landing{
         .carousel-item{
-            height: 60vh;
+            height: 50vh !important;
         }
+        .carousel-control-next{
+            transform: scale(0.8);
+        }
+        .carousel-control-prev{
+            transform: scale(0.8);
+        }
+    
     }
 
     #quote{
@@ -393,7 +403,13 @@ footer{
 @media  screen and (max-width:500px) {
     #landing{
         .carousel-item{
-            height: 50vh;
+            height: 50vh !important;
+        }
+        .carousel-control-next{
+            transform: scale(0.6);
+        }
+        .carousel-control-prev{
+            transform: scale(0.6);
         }
     }
 
@@ -405,7 +421,7 @@ footer{
 @media  screen and (max-width:450px) {
     #landing{
         .carousel-item{
-            height: 40vh;
+            height: 40vh !important;
         }
     }
 
