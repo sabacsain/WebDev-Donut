@@ -72,9 +72,10 @@ header .navbar-nav {
   background: white;
   color: #DB433B;
   font-size: clamp(0.4375rem, -0.1875rem + 2vw, 0.9375rem);
+  border-radius: 75px 75px;
 }
 #landing .d-grid button:hover {
-  background: #DB433B;
+  background: #59092F;
   color: white;
 }
 
@@ -161,6 +162,7 @@ header .navbar-nav {
   font-weight: 400;
   font-size: 20px;
   color: #59092F;
+  
 }
 #cake-recipe .banner-img, #pie-recipe .banner-img, #donut-recipe .banner-img {
   width: 100%;
@@ -239,7 +241,7 @@ footer p {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  background: #335dff;
+  background: #59092F;
   color: #fff;
   text-align: center;
   text-decoration: none;
