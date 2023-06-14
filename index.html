@@ -83,12 +83,16 @@
               </svg>
           </a>
 
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon"></span></button>
+            
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <i class="fa-solid fa-house"></i>
-                <a class="nav-link active" aria-current="page" href="index.html">
-                    HOME
+                <a class="nav-link active" aria-current="page" href="#">
+                    <strong>HOME</strong>
                 </a>
               </li>
 
@@ -98,12 +102,12 @@
                     <li class="nav-item dropdown">
                       <i class="fa-solid fa-utensils"></i>
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        RECIPE
+                        <strong>RECIPE</strong>
                       </a>
                       <ul class="dropdown-menu dropdown-menu-light">
-                        <li><a class="dropdown-item" onmouseover="this.style.color='red';" onmouseleave="this.style.color='black';" href="#cake">cake</a></li>
-                        <li><a class="dropdown-item" onmouseover="this.style.color='red';" onmouseleave="this.style.color='black';" href="#doughnut">donut</a></li>
-                        <li><a class="dropdown-item" onmouseover="this.style.color='red';" onmouseleave="this.style.color='black';" href="#pie">pie</a></li>
+                        <li><a class="dropdown-item" href="#cake">cake</a></li>
+                        <li><a class="dropdown-item" href="#doughnut">donut</a></li>
+                        <li><a class="dropdown-item" href="#pie">pie</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -129,7 +133,7 @@
           </div>
           <div class="carousel-item">
             <div class="d-grid gap-2 col-3 mx-auto">
-              <button type="button" class="btn btn-outline-danger"  onclick="location.href='index.html#donut'">EXPLORE DONUT RECIPE</button>
+              <button type="button" class="btn btn-outline-danger"  onclick="location.href='index.html#doughnut'">EXPLORE DONUT RECIPE</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -154,7 +158,7 @@
     
     <!-- QUOTE SECTION -->
     <section id="quote">
-                 <!-- bg url ba rito? -->
+
       <div class="container">
         <h3 class="quote1">“You don’t have to love cooking to cook, but you have to do more than love baking to bake. You have to bake out of love.” - Tom Junod</h3>
       </div>
@@ -163,12 +167,12 @@
     <!-- CAKE SECTION -->
     <section id="cake">
         <h1>Cakes</h1>
-        <div class="container">
+        <div class="container reveal">
           <div class="card" style="width: 18rem;">
               <img src="images/home/cake.png" class="card-img-top1" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Chocolate Cake</h5>
-                <a href="#" class="btn btn-outline-danger">See Recipe</a>
+                <a href="#cake-recipe" class="btn btn-outline-danger">See Recipe</a>
               </div>
           </div>
 
@@ -176,7 +180,7 @@
               <img src="images/home/lemon-blueberry-cake.png" class="card-img-top1" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Lemon Blueberry Cake</h5>
-                <a href="#" class="btn btn-outline-danger">See Recipe</a>
+                <a href="#cake-recipe" class="btn btn-outline-danger">See Recipe</a>
               </div>
           </div>
 
@@ -184,7 +188,7 @@
               <img src="images/home/chocolate-raspberry-cheesecake.png" class="card-img-top1" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Chocolate Raspberry Cheesecake</h5>
-                <a href="#" class="btn btn-outline-danger">See Recipe</a>
+                <a href="#cake-recipe" class="btn btn-outline-danger">See Recipe</a>
               </div>
           </div>
 
@@ -197,6 +201,7 @@
     <section id="cake-recipe">
       <img src="images/home/recipe.png" alt="" class="banner-img"> 
       <h1>Cake Recipes</h1>
+      
       <div class="container reveal">
         <div class="accordion" id="accordionCake">
             <div class="accordion-item" id="chocolate-cake">
@@ -266,7 +271,7 @@
                                     6. Let the cakes cool in the pans for 30 minutes. Then, turn them out onto a cooling rack to let them cool completely.
                                   </p>
                                   <p class="instructions"> 
-                                    7. Frost the cake with chocolate buttercream frosting.
+                                    7. Frost the cake with chocolate buttercream frosting. asasas
                                   </p>
                                 </ul>
                             </div>
@@ -275,10 +280,105 @@
                             <!-- Video -->
                             <div class="row">
                               <div class="ratio ratio-16x9">
-                                <video class="embed-responsive-item" controls autoplay muted>
-                                  <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/2XBvw_Ty-C0" title="Chocolate Cake Recipe | How to Make Chocolate Cake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+                              </div>
+                            </div>
+
+                          </div>
+
+                      </div>
+                    </div>
+                      
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" id="lemon-blueberry-cake">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoCake" aria-expanded="true" aria-controls="collapseTwoCake">
+                  Lemon Blueberry Cake
+                </button>
+              </h2>
+              <div id="collapseTwoCake" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionCake">
+                <div class="accordion-body">
+                   
+                    <div class="container">
+
+                        <div class="row">
+
+                          <div class="col-4" >
+                            <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                                <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                                <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                            </div>
+
+                            <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                              <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                            </div>
+
+                            <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                              <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                              <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">2 cups finely shredded and lightly drained zucchini</li>
+                                  <li class="list-group-item">3 large eggs, lightly beaten, room temperature</li>
+                                  <li class="list-group-item">1 cup (224g) vegetable oil</li>
+                                  <li class="list-group-item">3 teaspoons vanilla extract</li>
+                                  <li class="list-group-item">2¼ cups (450g) granulated sugar</li>
+
+                                  <li class="list-group-item">3 cups (375g) all-purpose flour</li>
+                                  <li class="list-group-item">1 teaspoon kosher salt</li>
+                                  <li class="list-group-item">1 teaspoon baking powder</li>
+                                  <li class="list-group-item">¼ teaspoon baking soda</li>
+                                  <li class="list-group-item">1 pint fresh blueberries, you can reserve a few for garnish if so desired</li>
+                                </ul>
+                            </div>
+
+                          </div>
+
+                          <div class="col-8" style="text-align: center; padding: 5%;">
+                            <div class="row">
+                              <label class="rounded-pill bg-primary text-white">Instructions</label>
+                              <ul style="list-style-type: none;padding: 2% 0;">
+                                  <p class="instructions"> 
+                                    <strong>Cake</strong>
+                                  </p>
+                                  <p class="instructions"> 
+                                    1. Preheat oven to 350°F. Prepare two 8-inch round cake pans with butter and flour or use non-stick baking spray.
+                                  </p>
+                                  <p class="instructions"> 
+                                    2. Grate a large zucchini (or two small zucchini) and place in a clean dish towel. Life the edges of the towel up and squeeze some of the extra moisture out, but you do not want the zucchini to be dry. You will want 2 total cups of shredded zucchini after it has been drained. Set aside.
+                                  </p>
+                                  <p class="instructions"> 
+                                    3. In a large bowl and using a hand mixer, beat together the eggs, oil, vanilla, and sugar. Fold in the zucchini.
+                                  </p>
+                                  <p class="instructions"> 
+                                    4. Slowly stir in the flour, salt, baking powder, and baking soda. Gently fold in the blueberries. Divide batter evenly between prepared cake pans.
+                                  </p>
+                                  <p class="instructions"> 
+                                    5. Bake 35-40 minutes in the preheated oven, or until a knife inserted in the center of a cake comes out clean. Cool 20 minutes in pans, then turn out onto wire racks to cool completely.
+                                  </p>
+
+                                  <p class="instructions"> 
+                                   <strong> Lemon Buttercream</strong>
+                                  </p>
+                                  <p class="instructions"> 
+                                    1. Combine butter, sugar and salt and beat until well combined.
+                                  </p>
+                                  <p class="instructions"> 
+                                    2. Add lemon juice and vanilla and continue to beat for another 3 to 5 minute or until creamy.
+                                  </p>
+                                  <p class="instructions"> 
+                                    3. Fold in zest (If you are piping this buttercream, I recommend leaving out the zest).
+                                  </p>
+                                </ul>
+                            </div>
+                          
+
+                            <!-- Video -->
+                            <div class="row">
+                              <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/avByUWeY1e8" title="Lemon Blueberry Cheesecake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                               </div>
                             </div>
 
@@ -293,61 +393,6 @@
             </div>
 
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoCake" aria-expanded="false" aria-controls="collapseTwoCake">
-                  Lemon Blueberry Cake
-                </button>
-              </h2>
-              <div id="collapseTwoCake" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCake">
-                <div class="accordion-body">
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
-                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
-                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="images/home/lemon_blueberry_accordion.png" class="img-fluid" alt="...">
-                            </div>
-                            <div class="col-8" style="text-align: center;">
-                                <label class="rounded-pill bg-primary text-white">Instructions </label>
-                                <ul style="list-style-type: none;padding: 2% 0;">
-                                    <li>An item</li>
-                                    <li>A second item</li>
-                                    <li>A third item</li>
-                                    <li>A fourth item</li>
-                                    <li>And a fifth one</li>
-                                  </ul>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4" style="text-align: center;" >
-                                <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
-                                <ul class="list-group list-group-flush" >
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A fourth item</li>
-                                    <li class="list-group-item">And a fifth one</li>
-                                  </ul>
-                            </div>
-                            <!-- Video -->
-                            <div class="col-8">
-                                <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                    <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeCake" aria-expanded="false" aria-controls="collapseThreeCake">
                   Chocolate Raspberry Cheesecake
@@ -355,50 +400,101 @@
               </h2>
               <div id="collapseThreeCake" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCake">
                 <div class="accordion-body">
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+                  <div class="container">
+
+                    <div class="row">
+
+                      <div class="col-4" >
+                        <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
                             <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
                             <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                        </div>
+
+                        <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                          <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                        </div>
+
+                        <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                          <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><strong>Crust</strong></li>
+                              <li class="list-group-item">20 chocolate sandwich cookies</li>
+                              <li class="list-group-item">5 tablespoons butter, melted</li>
+                              <li class="list-group-item"></li>
+
+                              <li class="list-group-item"><strong>Cheesecake</strong></li>
+                              <li class="list-group-item">3 packages (8 ounces each) cream cheese, room temperature</li>
+                              <li class="list-group-item">1 ¾ cups granulated sugar</li>
+                              <li class="list-group-item">4 eggs</li>
+                              <li class="list-group-item">¾ cup sour cream</li>
+                              <li class="list-group-item">½ cup raspberry puree</li>
+                              <li class="list-group-item">2 teaspoons vanilla extract</li>
+                              <li class="list-group-item">1 ½ teaspoons raspberry extract</li>
+                              <li class="list-group-item">½ cup semi-sweet chocolate chips melted</li>
+                              <li class="list-group-item">3 tablespoons unsweetened cocoa powder</li>
+                              <li class="list-group-item"></li>
+
+                              <li class="list-group-item"><strong>Ganache</strong></li>
+                              <li class="list-group-item">¾ cup milk chocolate chips or semi-sweet chocolate chips</li>
+                              <li class="list-group-item">½ cup heavy cream</li>
+                              <li class="list-group-item">1 pint fresh raspberries</li>
+                              
+                            </ul>
+                        </div>
+
+                      </div>
+
+                      <div class="col-8" style="text-align: center; padding: 5%;">
+                        <div class="row">
+                          <label class="rounded-pill bg-primary text-white">Instructions</label>
+                          <ul style="list-style-type: none;padding: 2% 0;">
+                              <p class="instructions"> 
+                                <strong>Crust</strong>
+                              </p>
+                              <p class="instructions"> 
+                                1. Preheat oven to 325°F. 
+                              </p>
+                              <p class="instructions"> 
+                                2. Add the cookies into a food processor. Pulse until cookie crumbs are all that are left. Remove any large pieces of cookie. 
+                              </p>
+                              <p class="instructions"> 
+                                3. Add in the butter and pulse until the cookie crumbs resemble wet sand. 
+                              </p>
+                              <p class="instructions"> 
+                                4. Press the crust into the bottom of a 9-inch springform pan. 
+                              </p>
+                              <p class="instructions"> 
+                                5. Place in the oven for 15 minutes. Remove from the oven and let cool.
+                              </p>
+
+                              <p class="instructions"> 
+                               <strong>Cheesecake</strong>
+                              </p>
+                              <p class="instructions"> 
+                                1. Add the cream cheese to a mixing bowl. Beat on medium with a hand mixer until the cream cheese is smooth. Scrape down the bowl.
+                              </p>
+                              <p class="instructions"> 
+                                2. Add the sugar and beat until incorporated. Scrape down the sides and bottom of the bowl.
+                              </p>
+                              <p class="instructions"> 
+                                3. Add the eggs one at a time. Beat each egg in before adding the next. Scrape down the sides and bottom of the bowl.
+                              </p>
+                            </ul>
+                        </div>
+                      
+
+                        <!-- Video -->
+                        <div class="row">
+                          <div class="ratio ratio-16x9">
+                            <iframe width="1536" height="610" src="https://www.youtube.com/embed/zBhoR_y9jmU" title="Chocolate Raspberry Cake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                           </div>
                         </div>
 
-                        <div class="row">
-                            <div class="col-4">
-                                <img src="images/home/raspberry_accordion.png" class="img-fluid" alt="...">
-                            </div>
-                            <div class="col-8" style="text-align: center;">
-                                <label class="rounded-pill bg-primary text-white">Instructions</label>
-                                <ul style="list-style-type: none;padding: 2% 0;">
-                                    <li>An item</li>
-                                    <li>A second item</li>
-                                    <li>A third item</li>
-                                    <li>A fourth item</li>
-                                    <li>And a fifth one</li>
-                                  </ul>
-                            </div>
-                        </div>
+                      </div>
 
-                        <div class="row">
-                            <div class="col-4" style="text-align: center;">
-                                <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A fourth item</li>
-                                    <li class="list-group-item">And a fifth one</li>
-                                  </ul>
-                            </div>
-                            <!-- Video -->
-                            <div class="col-8">
-                                <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                    <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
+                    
               </div>
             </div>
           </div>
@@ -409,13 +505,13 @@
     <!-- DONUT SECTION -->
     <section id="doughnut">
       <h1>Doughnuts</h1>
-      <div class="container">
+      <div class="container reveal">
 
         <div class="card" style="width: 18rem;">
             <img src="images/home/glazed-cake-doughnut.png" class="card-img-top2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Glazed Cake Donuts</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#donut-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -423,7 +519,7 @@
             <img src="images/home/pumpkin-doughnut.png" class="card-img-top2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Pumpkin Donuts</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#donut-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -431,7 +527,7 @@
             <img src="images/home/apple-cider-doughnut.png" class="card-img-top2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Apple Cider Donuts</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#donut-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -454,50 +550,109 @@
           <div id="collapseOneDonut" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionDonut">
             <div class="accordion-body">
                
-                <div class="container">
-                    <div class="row">
-                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
-                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+               <div class="container">
+
+                  <div class="row">
+
+                    <div class="col-4" >
+                      <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                          <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                          <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
                       </div>
+
+                      <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                        <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                      </div>
+
+                      <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                        <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Cake Donut</strong></li>
+                            <li class="list-group-item">2 ½ cups all-purpose flour</li>
+                            <li class="list-group-item">⅓ cup granulated sugar/li>
+                            <li class="list-group-item">1 tablespoon baking powder</li>
+
+                            <li class="list-group-item">¼ teaspoon nutmeg</li>
+                            <li class="list-group-item">¼ teaspoon salt</li>
+                            <li class="list-group-item">1 cup whole milk</li>
+                            <li class="list-group-item">1 large egg, room temperature and lightly beaten</li>
+                            <li class="list-group-item">5 tablespoons unsalted butter, melted</li>
+                            <li class="list-group-item">2 teaspoons vanilla extract</li>
+                            <li class="list-group-item">4 cups vegetable oil, about 2 or 3-inches deep in your pan</li>
+
+                            <li class="list-group-item"><strong>Glaze</strong></li>
+                            <li class="list-group-item">4 cups (500 g) confectioners sugar</li>
+                            <li class="list-group-item">2 teaspoons corn syrup</li>
+                            <li class="list-group-item">½ teaspoon vanilla extract</li>
+                            <li class="list-group-item">¼ teaspoon salt</li>
+                            <li class="list-group-item">¼-½ cup milk</li>
+                            
+                          </ul>
+                      </div>
+
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="images/home/glazed-cake-doughnut-accordion.png" class="img-fluid" alt="...">
+                    <div class="col-8" style="text-align: center; padding: 5%;">
+                      <div class="row">
+                        <label class="rounded-pill bg-primary text-white">Instructions</label>
+                        <ul style="list-style-type: none;padding: 2% 0;">
+                            <p class="instructions"> 
+                              1. In a large bowl, sift together flour, sugar, baking powder, nutmeg, and salt.
+                            </p>
+                            <p class="instructions"> 
+                              2. Add in milk, egg, butter, and vanilla extract. Stir by hand until ingredients are fully incorporated. It will be sticky. Cover with a damp towel and refrigerate for 1 hour.
+                            </p>
+                            <p class="instructions"> 
+                              3. Roll out the dough to ¾ inches to 1-inch thick. It is important to make sure the dough is at least ¾ thick or your donuts will be too flat.
+                            </p>
+                            <p class="instructions"> 
+                              4. Once rolled out, use a donut cutter to cut out shapes. If you do not have a donut cutter, use a round tool like a kitchen glass or a jar lid that is about 3-inches across. You can use a bottle cap or small shot glass for the smaller hole.
+                            </p>
+                            <p class="instructions"> 
+                              5. Set cut-out donuts on a baking sheet.
+                            </p>
+                            <p class="instructions"> 
+                              6. Prepare Glaze
+                            </p>
+                            <p class="instructions"> 
+                              7. Mix all ingredients in a medium to large bowl. Whisk until they are smooth and you have reached the desired consistency. (I think the perfect consistency is the same as the corn syrup, not too runny but loose enough for it to fall beautifully over all the nooks and crannies of the donut.)
+                            </p>
+                            <p class="instructions"> 
+                              8. Begin Frying
+                            </p>
+                            <p class="instructions"> 
+                              9. Starting with the first pan of donuts you cutout (meaning that those donuts have been allowed to rise a bit more while you cut out the rest) drop one donut at a time into vegetable oil that has been heated to 350°F.
+                            </p>
+                            <p class="instructions"> 
+                              10. Allow each donut to brown for 45 seconds to 1 minute on one side, and then flip over so that the other side may brown.
+                            </p>
+                            <p class="instructions"> 
+                              11. Carefully remove donut from oil (I prefer and hand-held strainer) and set on a plate lined with paper towels.
+                            </p>
+                            <p class="instructions"> 
+                              12. While donuts are warm, submerge one side of the donuts into the glaze. Lift and let drain into the bowl, then move the donut to a baking sheet with a cooling rack in it. (You can also place on parchment or wax paper but the glaze might pool.)
+                            </p>
+                            <p class="instructions"> 
+                              13. Donuts can be enjoyed immediately or you can double dip them depending on how much glaze you like.
+                            </p>
+                            <p class="instructions"> 
+                              14. Store donuts in between parchment paper in an airtight container for up to two days.
+                            </p>
+                          </ul>
+                      </div>
+                    
+
+                      <!-- Video -->
+                      <div class="row">
+                        <div class="ratio ratio-16x9">
+                          <iframe width="1536" height="610" src="https://www.youtube.com/embed/aFaQ2cxYxbM" title="Homemade Glazed Donuts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <div class="col-8" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul style="list-style-type: none;padding: 2% 0;">
-                                <li>An item</li>
-                                <li>A second item</li>
-                                <li>A third item</li>
-                                <li>A fourth item</li>
-                                <li>And a fifth one</li>
-                              </ul>
-                        </div>
+                      </div>
+
                     </div>
 
-                    <div class="row">
-                        <div class="col-4"  style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                        </div>
-
-                        <!-- Video -->
-                        <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                              </div>
-                        </div>
-                    </div>
                 </div>
+              </div>
                   
 
             </div>
@@ -512,52 +667,125 @@
           </h2>
           <div id="collapseTwoDonut" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionDonut">
             <div class="accordion-body">
-                <div class="container">
+                  <div class="container">
+
                     <div class="row">
-                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
-                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
-                        <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+
+                      <div class="col-4" >
+                        <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
+                            <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                        </div>
+
+                        <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                          <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                        </div>
+
+                        <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                          <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><strong>Donuts</strong></li>
+                              <li class="list-group-item">3½ cups (437.5 g) all-purpose flour</li>
+                              <li class="list-group-item">1 cup (200 g) granulated sugar</li>
+                              <li class="list-group-item">4 teaspoons baking powder</li>
+
+                              <li class="list-group-item">2 teaspoons pumpkin pie spice</li>
+                              <li class="list-group-item">1 teaspoon kosher salt</li>
+                              <li class="list-group-item">1 cup (245 g) pure pumpkin</li>
+                              <li class="list-group-item">½ cup (122.5 g) buttermilk, room temperature</li>
+                              <li class="list-group-item">2 large eggs, room temperature</li>
+                              <li class="list-group-item">2 tablespoons unsalted butter, melted</li>
+                              <li class="list-group-item">2 teaspoons vanilla extract
+                                canola oil, for frying</li>
+
+                                <li class="list-group-item"><strong>Maple Cinnamon Glaze</strong></li>
+                              <li class="list-group-item">2 cups (250 g) confectioners' sugar</li>
+                              <li class="list-group-item">2 teaspoons cinnamon</li>
+                              <li class="list-group-item">2 tablespoons pure maple syrup</li>
+                              <li class="list-group-item">2-4 tablespoons whole milk, room temperature</li>
+                              
+                            </ul>
+                        </div>
+
                       </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="images/home/pumpkin-doughnut-accordion.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-8" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul style="list-style-type: none;padding: 2% 0;">
-                                <li>An item</li>
-                                <li>A second item</li>
-                                <li>A third item</li>
-                                <li>A fourth item</li>
-                                <li>And a fifth one</li>
-                              </ul>
-                        </div>
-                    </div>
+                      <div class="col-8" style="text-align: center; padding: 5%;">
+                        <div class="row">
+                          <label class="rounded-pill bg-primary text-white">Instructions</label>
+                          <ul style="list-style-type: none;padding: 2% 0;">
+                            <p class="instructions"> 
+                              1. Prepare three baking sheets, one lined with parchment paper, one with paper towels, and a third with a wire rack. Set aside.
+                            </p>
+                            
+                            <p class="instructions">
+                              2. In a large bowl, whisk together flour, sugar, baking powder, pumpkin pie spice, and salt.
+                            </p>
+                            
+                            <p class="instructions">
+                              3. In a second bowl, whisk together pumpkin, buttermilk, eggs, melted butter, and vanilla extract.
+                            </p>
+                            
+                            <p class="instructions">
+                              4. Pour the wet ingredients into the dry ingredients; Stir by hand until well combined.
+                            </p>
+                            
+                            <p class="instructions">
+                              5. Pour the dough out onto a floured surface. Roll out the dough to ½-inch thickness, adding more flour to the work surface as needed. (The donuts will puff up when cooked in oil.)
+                            </p>
+                            
+                            <p class="instructions">
+                              6. Once rolled out, use a donut cutter to cut out shapes. If you do not have a donut cutter, use a round tool like a kitchen glass or a jar lid that is about 3-inches across. You can use a bottle cap or small shot glass for the smaller hole.
+                            </p>
+                            
+                            <p class="instructions">
+                              7. Set cut-out donuts on the parchment-lined baking sheet. Set aside while you prepare the glaze.
+                            </p>
+                            
+                            <p class="instructions">
+                              8. Mix all ingredients in a medium to large bowl. Whisk until they are smooth and you have reached the desired consistency. (I think the perfect consistency is the same as the corn syrup, not too runny but loose enough for it to fall beautifully over all the nooks and crannies of the donut.)
+                            </p>
+                            
+                            <p class="instructions">
+                              9. In a large heavy-bottomed pot or deep fryer, heat about 2-3 inches of canola oil to 350°F.
+                            </p>
 
-                    <div class="row">
-                        <div class="col-4" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white"  style="margin: 3% 0;">Ingredients </label>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
+                            <p class="instructions">
+                              10. In a large heavy-bottomed pot or deep fryer, heat about 2-3 inches of canola oil to 350°F.
+                            </p>
+
+                            <p class="instructions">
+                              11. Working 2-3 at a time, carefully lower donuts into the hot oil and fry for 45 seconds to 1 minute. Flip and repeat on the opposite side. The donuts should be golden brown.
+                            </p>
+
+                            <p class="instructions">
+                              12. Carefully remove the donut(s) from the oil (I prefer a hand-held strainer) and set each on the paper towel-lined pan.
+                            </p>
+
+                            <p class="instructions">
+                              13. While the donuts are still warm, submerge one side of the donuts into the maple cinnamon glaze. Lift and let drain into the bowl, then move the donut to the baking sheet with the wire rack on it. (You can also place on parchment or wax paper but the glaze might pool.) Let the glaze set before serving.
+                            </p>
+
+                            <p class="instructions">
+                              14. Store donuts in between parchment paper in an airtight container for up to two days.
+                            </p>
+                                                         
                         </div>
+                      
+
                         <!-- Video -->
-                        <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                                </div>
+                        <div class="row">
+                          <div class="ratio ratio-16x9">
+                            <iframe width="1536" height="610" src="https://www.youtube.com/embed/6KH9WMzIf7c" title="Super-Easy Pumpkin Donuts  Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
                         </div>
-                    </div>
+
+                      </div>
+
+                  </div>
                 </div>
             </div>
+            </div>
           </div>
-        </div>
 
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
@@ -567,49 +795,74 @@
           </h2>
           <div id="collapseThreeDonut" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionDonut">
             <div class="accordion-body">
-                <div class="container">
-                    <div class="row">
-                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col-4" >
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                    </div>
+
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                    </div>
+
+                    <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">2½ cups (312.5 g) all-purpose flour</li>
+                        <li class="list-group-item">⅓ cup (67 g) granulated sugar</li>
+                        <li class="list-group-item">1 tablespoon baking powder</li>
+                        <li class="list-group-item">1 teaspoon apple pie spice</li>
+                        <li class="list-group-item">¼ teaspoon kosher salt</li>
+                        <li class="list-group-item">¾ cup (186 g) apple cider</li>
+                        <li class="list-group-item">1 large egg, room temperature, beaten</li>
+                        <li class="list-group-item">5 tablespoons unsalted butter, melted</li>
+                        <li class="list-group-item">¼ cup (71 g) Greek yogurt</li>
+                        <li class="list-group-item">2 teaspoons vanilla extract</li>
+                        <li class="list-group-item">4 cups vegetable oil, 2-3 inches deep in pot</li>
+                        <li class="list-group-item">Topping</li>
+                        <li class="list-group-item">1 cup (200 g) granulated sugar</li>
+                        <li class="list-group-item">2 teaspoons apple pie spice</li>  
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <div class="col-8" style="text-align: center; padding: 5%;">
+                    <div class="row">
+                      <label class="rounded-pill bg-primary text-white">Instructions</label>
+                      <ul style="list-style-type: none;padding: 2% 0;">
+                        <div>
+                          <p class="instructions">1. In a large bowl, sift together flour, sugar, baking powder, apple pie spice, and salt.</p>
+                          <p class="instructions">2. Add in apple cider, egg, butter, Greek yogurt, and vanilla. Stir with a wooden spoon until ingredients are fully incorporated. (It will be sticky.) Cover with a damp towel and refrigerate for one hour.</p>
+                          <p class="instructions">3. When ready, roll out the dough to ¼-inch to ½-inch thick. (The thinner the dough, the more donuts you can make.) Try to make them as consistent in size as possible.</p>
+                          <p class="instructions">4. Once rolled out, use a donut cutter to cut out the shapes. If you do not have a donut cutter, use a round tool like a kitchen glass or a jar lid that is about 3-inches across. Use a bottle cap or small shot glass for the smaller hole.</p>
+                          <p class="instructions">5. Set the cut-out donuts on a baking sheet to let rest as you heat the oil.</p>
+                          <p class="instructions">6. Topping: In a small bowl, mix together the sugar and apple pie spice. Set aside.</p>
+                          <p class="instructions">7. Frying Donuts: Fill a large pot with 2-3 inches of oil. Heat to 350°F.</p>
+                          <p class="instructions">8. Once the oil is hot, drop in one donut at a time. Cook 45 seconds to a minute on each side.</p>
+                          <p class="instructions">9. Using a hand-held strainer, carefully remove the donut from the oil and set on a plate lined with paper towels. Repeat with the remaining donuts. Be sure to maintain 350°F oil temperature between donuts.</p>
+                          <p class="instructions">10. While donuts are warm, dip them into the sugar and apple pie spice mixture. Place the dipped donuts onto a baking sheet lined with parchment paper. Serve warm.</p>
+                        </div>
+                        
+                        </ul>
+                    </div>
+                  
+
+                    <!-- Video -->
+                    <div class="row">
+                      <div class="ratio ratio-16x9">
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/6KH9WMzIf7c" title="Super-Easy Pumpkin Donuts  Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="images/home/apple-cider-doughnut-accordion.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-8"  style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul style="list-style-type: none;padding: 2% 0;">
-                                <li>An item</li>
-                                <li>A second item</li>
-                                <li>A third item</li>
-                                <li>A fourth item</li>
-                                <li>And a fifth one</li>
-                              </ul>
-                        </div>
-                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-4" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                        </div>
-                        <!-- Video -->
-                        <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -620,13 +873,13 @@
     <!-- PIE SECTION -->
     <section id="pie">
       <h1>Pies</h1>
-      <div class="container">
+      <div class="container reveal">
 
         <div class="card">
             <img src="images/home/hutternutter-pie.png" class="card-img-top3" alt="...">
             <div class="card-body">
               <h5 class="card-title">Fluffernutter Pie</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#pie-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -634,7 +887,7 @@
             <img src="images/home/blueberry-lemon-cream-pie.png" class="card-img-top3" alt="...">
             <div class="card-body">
               <h5 class="card-title">Blueberry Lemon Cream Pie</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#pie-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -642,7 +895,7 @@
             <img src="images/home/cranberry-pie.png" class="card-img-top3" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cranberry Pie</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#pie-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -665,50 +918,72 @@
           <div id="collapseOnePie" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionPie">
             <div class="accordion-body">
                 
-                <div class="container">
-                    <div class="row">
-                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col-4" >
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                    </div>
+
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                    </div>
+
+                    <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Crust</strong></li>
+                        <li class="list-group-item">1 ½ cups (126 g) graham cracker crumbs, about 10-12 graham cracker sheets, crushed</li>
+                        <li class="list-group-item">½ cup (1 stick / 113 g) unsalted butter, melted</li>
+                        <li class="list-group-item"><strong>Filling</strong></li>
+                        <li class="list-group-item">3 cups (150 g) mini marshmallows</li>
+                        <li class="list-group-item">½ cup (122.5 g) whole milk</li>
+                        <li class="list-group-item">1 ½ cups (357 g) heavy cream</li>
+                        <li class="list-group-item">½ cup (129 g) creamy peanut butter, melted</li> 
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <div class="col-8" style="text-align: center; padding: 5%;">
+                    <div class="row">
+                      <label class="rounded-pill bg-primary text-white">Instructions</label>
+                      <ul style="list-style-type: none;padding: 2% 0;">
+                        <div>
+                          <p class="instructions"><strong>Crust</strong></p>
+                          <p class="instructions">
+                            1. In a small bowl, combine graham cracker crumbs and melted butter. Make sure to get every crumb coated with butter.
+                          </p>
+                          <p class="instructions">2. Pour the crumbs into a deep 9-inch pie pan, pressing it into the bottom and up the sides. Set aside.(It will be sticky.) Cover with a damp towel and refrigerate for one hour.</p>
+
+                          <p class="instructions"><strong>Filling</strong></p>
+                          <p class="instructions">1. To a saucepan over low heat, add marshmallows and milk. Stir constantly until the marshmallows are melted and the mixture is combined. Remove from heat and let cool completely.</p>
+                          <p class="instructions">2. While the marshmallow is cooling, add heavy cream to a mixing bowl. Using an electric mixer, start mixing at the lowest speed, and then gradually increase the speed to medium until the cream starts to get thicker (soft peaks). (The gradual progression prevents you from spraying yourself with cream.)</p>
+                          <p class="instructions">3. Gently fold in the cooled marshmallow mixture. Spoon the mixture into the graham cracker crust.</p>
+                          <p class="instructions">4. Put the melted peanut butter into a pastry bag (or a plastic zipper bag with a corner cut off). Drizzle the peanut butter across the top of the marshmallow mixture. (Or you can carefully spread it with a kitchen knife.) Gently spread it out into an even layer.</p>
+                          <p class="instructions">5. Chill the pie in the refrigerator for 2 hours, up to overnight (or until set). Serve chilled.
+                          </p>
+                          
+                        </div>
+                        
+                        </ul>
+                    </div>
+                  
+
+                    <!-- Video -->
+                    <div class="row">
+                      <div class="ratio ratio-16x9">
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/-ZZkKWfnNYY" title="Fluffernutter Pie recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="images/home/hutternutter-pie-accordion.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-8" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul style="list-style-type: none;padding: 2% 0;">
-                                <li>An item</li>
-                                <li>A second item</li>
-                                <li>A third item</li>
-                                <li>A fourth item</li>
-                                <li>And a fifth one</li>
-                              </ul>
-                        </div>
-                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-4" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                        </div>
-
-                        <!-- Video -->
-                        <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                              </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
                   
 
             </div>
@@ -723,49 +998,88 @@
           </h2>
           <div id="collapseTwoPie" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionPie">
             <div class="accordion-body">
-                <div class="container">
-                    <div class="row">
-                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col-4" >
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                    </div>
+
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                    </div>
+
+                    <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Crust</strong></li>
+                        <li class="list-group-item">1 ½ cups graham cracker crumbs, about 10-12 graham cracker sheets, crushed</li>
+                        <li class="list-group-item">½ cup (1 stick / 113 g) unsalted butter, melted</li>
+                        <li class="list-group-item"><strong>Blueberry Topping</strong></li>
+                        <li class="list-group-item">3 ½ cups (518 g) fresh blueberries, divided</li>
+                        <li class="list-group-item">¼ cup (50 g) granulated sugar</li>
+                        <li class="list-group-item">2 tablespoons brown sugar</li>
+                        <li class="list-group-item">2 tablespoons cornstarch</li>
+                        <li class="list-group-item">2 tablespoons water</li>
+                        <li class="list-group-item">1 teaspoon lemon zest</li>
+                        <li class="list-group-item"><strong>Lemon Cream Pie</strong></li>
+                        <li class="list-group-item">2 blocks (8 ounces each) cream cheese, room temperature</li>
+                        <li class="list-group-item">1 cup (125 g) confectioners' sugar</li>
+                        <li class="list-group-item">3 tablespoons freshly squeezed lemon juice</li>
+                        <li class="list-group-item">1 teaspoon lemon zest</li>
+                        <li class="list-group-item">1 pinch kosher salt</li>
+                        <li class="list-group-item">1 ½ cups (180 g) whipped topping</li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <div class="col-8" style="text-align: center; padding: 5%;">
+                    <div class="row">
+                      <label class="rounded-pill bg-primary text-white">Instructions</label>
+                      <ul style="list-style-type: none;padding: 2% 0;">
+                        <p class="instructions"><strong>Crust</strong></p>
+                        <p class="instructions">1. In a small bowl, combine graham cracker crumbs and melted butter. Make sure to get every crumb coated with butter.</p>
+                        <p class="instructions">2. Pour the crumbs into a 9-inch pie pan, pressing it into the bottom and up the sides. Set aside.</p>
+                      
+                        <p class="instructions"><strong>Blueberry Topping</strong></p>
+                        <p class="instructions">3. In a medium saucepan over medium heat, add 2 cups of blueberries, sugar, and brown sugar. Mix until the sugar is dissolved. Blueberries will start to pop as they heat, this is normal.</p>
+                        <p class="instructions">4. In a small bowl, whisk together the cornstarch and water until the cornstarch is dissolved.</p>
+                        <p class="instructions">5. Pour the cornstarch mixture into the blueberries and stir until thickened.</p>
+                        <p class="instructions">6. Add the lemon zest. Stir to combine.</p>
+                        <p class="instructions">7. Remove from heat and fold in the remaining blueberries.</p>
+                        <p class="instructions">8. Pour the blueberry mixture into a separate bowl. Allow it to cool a few minutes before transferring the bowl to the refrigerator to chill as you make the filling. This will make about 2 cups.</p>
+                      
+                        <p class="instructions"><strong>Lemon Cream Pie Filling</strong></p>
+                        <p class="instructions">9. In a large bowl, beat the cream cheese until it is light and fluffy.</p>
+                        <p class="instructions">10. Add in the confectioner's sugar, lemon juice, lemon zest, and salt. Beat until everything is combined.</p>
+                        <p class="instructions">11. Gently fold in the whipped topping. This will make about 3 ½ cups of filling.</p>
+                      
+                        <p class="instructions">12. Assembly</p>
+                        <p class="instructions">13. Pour the filling mixture into the prepared pie crust.</p>
+                        <p class="instructions">14. Top with the cooled blueberry topping.</p>
+                        <p class="instructions">15. Chill the cream pie in the refrigerator for about 2 hours, or until set. Serve chilled.</p>
+                        
+                        </ul>
+                    </div>
+                  
+
+                    <!-- Video -->
+                    <div class="row">
+                      <div class="ratio ratio-16x9">
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/4YB0v73R6Ww" title="How To Make Blueberry Cream Pie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-8"  style="text-align: center;"> 
-                            <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul style="list-style-type: none;padding: 2% 0;">
-                                <li>An item</li>
-                                <li>A second item</li>
-                                <li>A third item</li>
-                                <li>A fourth item</li>
-                                <li>And a fifth one</li>
-                              </ul>
-                        </div>
-                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-4" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                        </div>
-                        <!-- Video -->
-                        <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
+
+
             </div>
           </div>
         </div>
@@ -778,49 +1092,68 @@
           </h2>
           <div id="collapseThreePie" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionPie">
             <div class="accordion-body">
-                <div class="container">
-                    <div class="row">
-                      <div class="col-4" style="padding-bottom: 1%;display: flex;justify-content: space-around;">
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col-4" >
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Calories: 280kcal </label>
                         <label class="rounded-pill bg-primary text-white" style="width: 48%;text-align: center;">Servings: 12 slices</label>
+                    </div>
+
+                    <div class="row" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <img src="images/home/blueberry-lemon-cream-pie-accordion.png" class="img-fluid" alt="...">
+                    </div>
+
+                    <div class="row" id="cake-ingredients" style="padding: 5%; padding-bottom: 2%;display: flex;justify-content: space-around;">
+                      <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients</label>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Cranberry Pie</strong></li>
+                        <li class="list-group-item">1 homemade (9-inch) pie crust, or store-bought</li>
+                        <li class="list-group-item">1 pound (454g) fresh cranberries</li>
+                        <li class="list-group-item">1¼ cups (250g) granulated sugar</li>
+                        <li class="list-group-item">¼ cup (31g) all-purpose flour</li>
+                        <li class="list-group-item"><strong>Streusel</strong></li>
+                        <li class="list-group-item">½ cup (58.5g) walnuts, roughly chopped</li>
+                        <li class="list-group-item">½ cup (100g) light brown sugar, packed</li>
+                        <li class="list-group-item">¼ cup (31g) all-purpose flour</li>
+                        <li class="list-group-item">2 tablespoons shortening</li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <div class="col-8" style="text-align: center; padding: 5%;">
+                    <div class="row">
+                      <label class="rounded-pill bg-primary text-white">Instructions</label>
+                      <ul style="list-style-type: none;padding: 2% 0;">
+                        <p class="instructions">1. Preheat oven to 350°F.</p>
+                        <p class="instructions">2. On a floured surface, roll out the pie crust dough into a large circle and place it into a 9-inch deep-dish pie plate, cutting away any excess crust. (If using a smaller pie pan, you will need to adjust the baking time.)</p>
+                        <p class="instructions">3. Flute or crimp the edges and place the crust in the refrigerator while you prepare the filling.</p>
+                        <p class="instructions">4. In the bowl of a food processor, add cranberries, sugar, and flour. Pulse until the berries are slightly smashed.</p>
+                        <p class="instructions">5. Spoon the cranberry filling into pie crust.</p>
+                        <p class="instructions">6. In a small bowl, combine walnuts, brown sugar, flour, and shortening. Use a fork or a pastry blender to mix together until crumbly.</p>
+                        <p class="instructions">7. Sprinkle the streusel mixture over the pie.</p>
+                        <p class="instructions">8. Place a baking sheet under the pie pan to catch any spills. Bake the pie 55-60 minutes, or until the crust is golden and the filling is bubbly.</p>
+                        <p class="instructions">9. Let the pie cool before slicing and serving.</p>
+                        
+                        </ul>
+                    </div>
+                  
+
+                    <!-- Video -->
+                    <div class="row">
+                      <div class="ratio ratio-16x9">
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/NwRhhw1WO-E" title="How to Make the Best Cranberry Pie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <img src="images/home/cranberry-pie-accordion.png" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-8" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white">Instructions </label>
-                            <ul style="list-style-type: none;padding: 2% 0;">
-                                <li>An item</li>
-                                <li>A second item</li>
-                                <li>A third item</li>
-                                <li>A fourth item</li>
-                                <li>And a fifth one</li>
-                              </ul>
-                        </div>
-                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-4" style="text-align: center;">
-                            <label class="rounded-pill bg-primary text-white" style="margin: 3% 0;">Ingredients </label>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
-                                <li class="list-group-item">A fourth item</li>
-                                <li class="list-group-item">And a fifth one</li>
-                              </ul>
-                        </div>
-                        <!-- Video -->
-                        <div class="col-8">
-                            <div class="embed-responsive embed-responsive-16by9" style="display: flex;justify-content: center;">
-                                <iframe class="embed-responsive-item" src="https://youtu.be/dQw4w9WgXcQ" allowfullscreen style="width: 50%;height: auto;"></iframe>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -832,7 +1165,41 @@
   </main>
   
   <footer>
-    <p>All rights reserved.</p>
+    <div class="container">
+      <img src="images/home/footer-logo.png" alt="Footer Logo">
+      
+      <div class="row align-items-center">
+        
+        <div class="col">
+          <ul>
+            <li><strong>Cakes</strong></li>
+            <li><a href="#cake-recipe">Chocolate Cake</a></li>
+            <li><a href="#cake-recipe">Lemon Blueberry Cake</a></li>
+            <li><a href="#cake-recipe">Chocolate Raspberry Cheesecake</a></li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <ul>
+            <li><strong>Doughnuts</strong></li>
+            <li><a href="#donut-recipe">Glazed Cake Donut</a></li>
+            <li><a href="#donut-recipe">Pumpkin Donut</a></li>
+            <li><a href="#donut-recipe">Apple Cider Donut</a></li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <ul>
+            <li><strong>Pies</strong></li>
+            <li><a href="#pie-recipe">Fluffernutter Pie</a></li>
+            <li><a href="#pie-recipe">Blueberry Lemon Cream Pie</a></li>
+            <li><a href="#pie-recipe">Cranberry Pie</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
   </footer>
   
 <a href="javascript:void(0);" id="backToTop" class="back-to-top">
@@ -853,8 +1220,6 @@
     <script src=
 "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js">
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    
 
     <script src="main.js"></script>
     
