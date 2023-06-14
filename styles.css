@@ -273,6 +273,12 @@ p.instructions {
 .accordion .accordion-button:not(.collapsed) {
   color: #59092F;
 }
+.accordion label{
+  text-align: center;
+}
+header .container-fluid a{
+  color: #DB433B;
+}
 
 footer {
   background: #DB433B;
