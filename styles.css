@@ -3,6 +3,9 @@
   font-family: Nexa Script;
   src: url(font/NexaScript-Bold.woff);
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   font-family: "Poppins";
