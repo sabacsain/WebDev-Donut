@@ -167,6 +167,12 @@ header .dropdown-menu {
   display: flex;
   flex-direction: column;
 }
+#cake .container .card .card-img-top1:hover, #pie .container .card .card-img-top3:hover, #doughnut .container .card .card-img-top2:hover{
+cursor: pointer;
+transform: scale(1.10);
+-webkit-transition: 0.5s ease-in-out;
+}
+
 #cake .container .card h5, #pie .container .card h5, #doughnut .container .card h5 {
   height: -moz-fit-content;
   height: fit-content;
@@ -368,6 +374,11 @@ footer a:hover {
   color: #59092F;
 }
 
+.card a:hover{
+  cursor: pointer;
+  transform: scale(1.10);
+}
+
 .back-to-top {
   position: fixed;
   bottom: -40px;
@@ -376,7 +387,7 @@ footer a:hover {
   width: 50px;
   height: 50px;
   line-height: 50px;
-  background: #335dff;
+  background: #59092F;
   color: #fff;
   text-align: center;
   text-decoration: none;
