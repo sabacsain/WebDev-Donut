@@ -280,14 +280,26 @@ header .container-fluid a{
   color: #DB433B;
 }
 
+
 footer {
   background: #DB433B;
-  color: white;
   text-align: center;
   margin: 0;
+  color: white;
 }
-footer p {
+footer img{
+  width: 40%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+footer li {
   margin: 0;
+  list-style: none;
+  margin-bottom: 2%;
+}
+footer a{
+  text-decoration: none;
+  color: white;
 }
 
 
