@@ -12,7 +12,26 @@ $dark: #59092F;
     font-family: Nexa Script;
     src: url(font/NexaScript-Bold.woff);
 }
+
+@mixin hover-effect{
+    background-color: $dark;
+    border: 4px solid $red !important;
+}
+
+@mixin control-style{
+    background-color: $red !important;
+    opacity: 1 !important;
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 50%;
   
+    margin: auto;
+
+    &:hover{
+        background-color: $dark !important;
+        border: 4px solid $red !important;
+    }
+}
 
 body{
     margin: 0;
@@ -65,10 +84,17 @@ header{
     .navbar-nav{
         margin-left: 50%;
     }
+
+    .dropdown-menu{
+        --bs-dropdown-link-hover-bg: #DB433B !important;
+        --bs-dropdown-link-active-bg: #DB433B !important;
+        --bs-dropdown-link-hover-color: white !important;
+    }
 }
 
 #landing{
-    margin-top: 5%;
+    margin-top: 65px;
+    margin-bottom: 17px;
 
     .carousel-item:first-child{
         background: url(images/home/carousel-cake.png) no-repeat center;
@@ -88,19 +114,40 @@ header{
         background-size: cover;
     }
 
-    .d-grid{
-        margin-top: 30%;
+    .carousel-control-next{
+        @include control-style;
+        margin-right: 20px;
+    }
+    
+    .carousel-control-prev{
+        @include control-style;
+        margin-left: 20px;
+    }
 
+    .d-grid{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        
         button{
             background: white;
             color: $red;
-            font-size: clamp(0.4375rem, -0.1875rem + 2vw, 0.9375rem);
+            font-size: clamp(0.75rem, -0.1875rem + 2vw, 1.375rem);
+            border: 4px solid #DB433B !important;
+            border-radius: 50px;
+            padding: 15px 50px;
+            min-width: 200px;
+            margin: auto !important;
+
+            &:hover{
+                color: white;
+                @include hover-effect;
+            }
         }
 
-        button:hover{
-            background: $red;
-            color: white;
-        }
     } 
 
 }
@@ -141,22 +188,23 @@ header{
         height: fit-content;
         margin: 10% auto 10% auto;
         justify-content: space-around;
+        gap: 10px;
+        align-items: stretch;
 
         .card{
-            width: 25%;
-            height: fit-content;
-            border: none;
+            width:18rem;
             text-align: center;
             display: flex;
             flex-direction: column;
 
             h5{
-                height: 60px;
+                height: fit-content;
+                min-height: 60px;
                 margin: auto;
                 font-family: 'Nexa Script';
                 font-style: normal;
                 font-weight: 400;
-                font-size: clamp(0.625rem, -0.3125rem + 3vw, 1.375rem);
+                font-size: clamp(0.75rem, -0.3125rem + 3vw, 1.375rem);
                 text-align: center;
                 color: $dark;
             }
@@ -164,11 +212,20 @@ header{
             a{
                 width: 100%;
                 font-size: clamp(0.625rem, -0.3125rem + 3vw, 1.375rem);
+                border: 2px solid $red !important;
+
+                &:hover{
+                    background-color: $dark;
+                    border: 2px solid $red !important;
+                }
+
             }
         }
 
         .card-body{
-            padding: 0;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
         }
 
 
@@ -217,11 +274,13 @@ header{
     .rounded-pill{
         padding: 1% 3%;
         font-weight: bold;
-        font-size: clamp(0.5rem, -0.2031rem + 2.25vw, 1.0625rem);
+        font-size: clamp(0.9375rem, -0.2031rem + 2.25vw, 1.0625rem);
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     ul > li{
-        font-size: clamp(0.4375rem, -0.1875rem + 2vw, 0.9375rem);
+        font-size: clamp(0.75rem, -0.1875rem + 2vw, 0.9375rem); 
     }
 }
 
@@ -231,6 +290,14 @@ header{
     .rounded-pill{
         background: $amarantPink !important;
         color: $dark !important;
+    }
+
+    ul > li{
+        background-color: rgb(255, 233, 246);
+    }
+
+    .accordion{
+        --bs-accordion-active-bg: #EFCFE3 !important;
     }
 
 
@@ -243,6 +310,14 @@ header{
         background: $beige !important;
         color: $dark !important;
     }
+
+    ul > li{
+        background-color: rgb(249, 249, 236);
+    }
+
+    .accordion{
+        --bs-accordion-active-bg: #e3f1c1 !important;
+    }
 }
 
 #donut-recipe{
@@ -252,6 +327,92 @@ header{
         background: $lightBlue !important;
         color: $dark !important;
     }
+
+    ul > li{
+        background-color: rgb(230, 242, 245);
+    }
+
+    .accordion{
+        --bs-accordion-active-bg:#B3DEE2 !important;
+    }
+}
+
+
+.accordion{
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem white !important;
+
+
+    @mixin accordion-button-effect{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath  fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        background-position: center;
+        --bs-accordion-btn-icon-width: 1.5rem;
+    }
+
+    .accordion-button:not(.collapsed){
+        &::after{
+            @include hover-effect;
+            @include accordion-button-effect;
+            
+        }
+    }
+
+    .accordion-button.collapsed::after{
+        background-color: $red;
+        @include accordion-button-effect;
+
+    }
+
+    .accordion-button:hover::after{
+        background-color: $dark;
+
+    }
+
+    .accordion-body{
+        height: 1200px;
+
+        .row{
+            
+            .col-4{
+                
+                .row:nth-child(3){
+                    
+                    ul{
+                        border-radius: 8px;
+                        height: 700px;
+                        padding: 0;
+                        overflow: auto;
+                         li{
+                            background-color: $beige; 
+                            color: $dark;
+                         }
+                    }
+                }
+            }
+
+            .col-8{
+                height: 1100px;
+
+                ul{
+                    height: 540px;
+                    overflow: auto;
+                }
+
+                p.instructions{
+                    text-align: justify;
+                    margin: 3%;
+                    color: $dark;
+                    font-size: clamp(0.75rem, -0.1875rem + 2vw, 0.9375rem); 
+
+                }
+            }
+        }
+
+       
+    }
+
 }
 
 
@@ -260,16 +421,153 @@ footer{
     color: white;
     text-align: center;
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-    p{
-        margin: 0;
+    img{
+        width: 40%;
+        margin-top: 2%;
+        margin-bottom: 3%;
     }
+
+
+    .row{
+       align-items: baseline !important;
+    }
+
+    .col{
+        height: 100%;
+    }
+
+    li {
+        margin: 0;
+        list-style: none;
+        margin-bottom: 20px;
+        line-height: 0.8;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: clamp(0.75rem, -0.1875rem + 2vw, 0.9375rem); 
+        
+        &:hover{
+            color: $dark;
+        }
+      }
+
 }
+
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: -40px;
+    right: 40px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #335dff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .back-to-top:focus {
+    color: #fff;
+  }
+  .back-to-top.show {
+    bottom: 40px;
+    right: 40px;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .back-to-top.show:hover {
+    color: #fff;
+    bottom: 30px;
+    opacity: 1;
+  }
+  .arrow {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+    position: absolute; width: 12px; height: 12px; background-size: contain;
+    transform: rotate(-90deg);
+    top: 30%;
+    left: 40%;
+  }
+  .arrow:nth-child(2){
+    top: 42%;
+  }
+  
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  @keyframes bounceAlpha {
+    0% {opacity: 1; transform: rotate(-90deg) translateX(0px) scale(1);}
+    25%{opacity: 0; transform: rotate(-90deg) translateX(10px) scale(0.9);}
+    26%{opacity: 0; transform: rotate(-90deg) translateX(-10px) scale(0.9);}
+    55% {opacity: 1; transform: rotate(-90deg) translateX(0px) scale(1);}
+  }
+  
+  .back-to-top:hover .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+  }
+  .back-to-top:hover .arrow:nth-child(2){
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+  }
+  
+  
+  @media only screen and (max-width: 575px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .back-to-top.show {
+        bottom: 10px;
+        right: 10px;
+    }
+    .back-to-top.show:hover {
+        bottom: 10px;
+    }
+    .arrow {
+        top: 27%;
+        left: 37%;
+    }
+  }
+
 
 @media  screen and (max-width:1400px) {
     #landing{
         .carousel-item{
-            height: 80vh;
+            height: 70vh !important;  
         }
     }
 
@@ -278,22 +576,62 @@ footer{
     }
 }
 
-@media  screen and (max-width:800px) {
+@media  screen and (max-width:1200px) {
     #landing{
         .carousel-item{
-            height: 60vh;
+            height: 50vh !important;
         }
+        .carousel-control-next{
+            transform: scale(0.8);
+        }
+        .carousel-control-prev{
+            transform: scale(0.8);
+        }
+    
     }
 
     #quote{
         height: 60vh;
     }
+    
+}
+
+@media  screen and (max-width:1000px) {
+    .accordion-body{
+        height: fit-content !important;
+        .row{
+            flex-direction: column;
+            
+            .col-4{
+                width: 100%;
+                .row{
+                    flex-direction: row;
+                }
+                ul{
+                    height: 400px !important;
+                }
+                
+            }
+
+            .col-8{
+                height: fit-content !important;
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 @media  screen and (max-width:500px) {
     #landing{
         .carousel-item{
-            height: 50vh;
+            height: 50vh !important;
+        }
+        .carousel-control-next{
+            transform: scale(0.6);
+        }
+        .carousel-control-prev{
+            transform: scale(0.6);
         }
     }
 
@@ -305,7 +643,7 @@ footer{
 @media  screen and (max-width:450px) {
     #landing{
         .carousel-item{
-            height: 40vh;
+            height: 40vh !important;
         }
     }
 

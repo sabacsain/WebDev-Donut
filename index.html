@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/images/home/roxy-logo2.png" type="image/png">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   
   <script src=
@@ -83,34 +84,34 @@
               </svg>
           </a>
 
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item me-4">
                 <i class="fa-solid fa-house"></i>
                 <a class="nav-link active" aria-current="page" href="#">
-                    HOME
+                  <strong>HOME</strong>
                 </a>
               </li>
-
-              <li class="nav-item">
-                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <i class="fa-solid fa-utensils"></i>
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        RECIPE
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-light">
-                        <li><a class="dropdown-item" href="#cake">cake</a></li>
-                        <li><a class="dropdown-item" href="#doughnut">donut</a></li>
-                        <li><a class="dropdown-item" href="#pie">pie</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
+          
+              <li class="nav-item dropdown">
+                <i class="fa-solid fa-utensils"></i>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>RECIPE</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-light">
+                  <li><a class="dropdown-item" href="#cake">Cake</a></li>
+                  <li><a class="dropdown-item" href="#doughnut">Donut</a></li>
+                  <li><a class="dropdown-item" href="#pie">Pie</a></li>
+                </ul>
               </li>
             </ul>
           </div>
+          
+          
 
         </div>
   
@@ -154,7 +155,7 @@
     
     <!-- QUOTE SECTION -->
     <section id="quote">
-                 <!-- bg url ba rito? -->
+
       <div class="container">
         <h3 class="quote1">“You don’t have to love cooking to cook, but you have to do more than love baking to bake. You have to bake out of love.” - Tom Junod</h3>
       </div>
@@ -163,12 +164,12 @@
     <!-- CAKE SECTION -->
     <section id="cake">
         <h1>Cakes</h1>
-        <div class="container">
+        <div class="container reveal">
           <div class="card" style="width: 18rem;">
               <img src="images/home/cake.png" class="card-img-top1" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Chocolate Cake</h5>
-                <a href="#" class="btn btn-outline-danger">See Recipe</a>
+                <a href="#cake-recipe" class="btn btn-outline-danger">See Recipe</a>
               </div>
           </div>
 
@@ -176,7 +177,7 @@
               <img src="images/home/lemon-blueberry-cake.png" class="card-img-top1" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Lemon Blueberry Cake</h5>
-                <a href="#" class="btn btn-outline-danger">See Recipe</a>
+                <a href="#cake-recipe" class="btn btn-outline-danger">See Recipe</a>
               </div>
           </div>
 
@@ -184,7 +185,7 @@
               <img src="images/home/chocolate-raspberry-cheesecake.png" class="card-img-top1" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Chocolate Raspberry Cheesecake</h5>
-                <a href="#" class="btn btn-outline-danger">See Recipe</a>
+                <a href="#cake-recipe" class="btn btn-outline-danger">See Recipe</a>
               </div>
           </div>
 
@@ -197,6 +198,7 @@
     <section id="cake-recipe">
       <img src="images/home/recipe.png" alt="" class="banner-img"> 
       <h1>Cake Recipes</h1>
+      
       <div class="container reveal">
         <div class="accordion" id="accordionCake">
             <div class="accordion-item" id="chocolate-cake">
@@ -266,7 +268,7 @@
                                     6. Let the cakes cool in the pans for 30 minutes. Then, turn them out onto a cooling rack to let them cool completely.
                                   </p>
                                   <p class="instructions"> 
-                                    7. Frost the cake with chocolate buttercream frosting.
+                                    7. Frost the cake with chocolate buttercream frosting. asasas
                                   </p>
                                 </ul>
                             </div>
@@ -275,10 +277,7 @@
                             <!-- Video -->
                             <div class="row">
                               <div class="ratio ratio-16x9">
-                                <video class="embed-responsive-item" controls autoplay muted>
-                                  <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/2XBvw_Ty-C0" title="Chocolate Cake Recipe | How to Make Chocolate Cake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
                               </div>
                             </div>
 
@@ -376,10 +375,7 @@
                             <!-- Video -->
                             <div class="row">
                               <div class="ratio ratio-16x9">
-                                <video class="embed-responsive-item" controls autoplay muted>
-                                  <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                                  Your browser does not support the video tag.
-                                </video>
+                                <iframe src="https://www.youtube.com/embed/avByUWeY1e8" title="Lemon Blueberry Cheesecake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                               </div>
                             </div>
 
@@ -421,7 +417,6 @@
                               <li class="list-group-item"><strong>Crust</strong></li>
                               <li class="list-group-item">20 chocolate sandwich cookies</li>
                               <li class="list-group-item">5 tablespoons butter, melted</li>
-                              <li class="list-group-item"></li>
 
                               <li class="list-group-item"><strong>Cheesecake</strong></li>
                               <li class="list-group-item">3 packages (8 ounces each) cream cheese, room temperature</li>
@@ -433,7 +428,6 @@
                               <li class="list-group-item">1 ½ teaspoons raspberry extract</li>
                               <li class="list-group-item">½ cup semi-sweet chocolate chips melted</li>
                               <li class="list-group-item">3 tablespoons unsweetened cocoa powder</li>
-                              <li class="list-group-item"></li>
 
                               <li class="list-group-item"><strong>Ganache</strong></li>
                               <li class="list-group-item">¾ cup milk chocolate chips or semi-sweet chocolate chips</li>
@@ -487,10 +481,7 @@
                         <!-- Video -->
                         <div class="row">
                           <div class="ratio ratio-16x9">
-                            <video class="embed-responsive-item" controls autoplay muted>
-                              <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                              Your browser does not support the video tag.
-                            </video>
+                            <iframe width="1536" height="610" src="https://www.youtube.com/embed/zBhoR_y9jmU" title="Chocolate Raspberry Cake" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                           </div>
                         </div>
 
@@ -509,13 +500,13 @@
     <!-- DONUT SECTION -->
     <section id="doughnut">
       <h1>Doughnuts</h1>
-      <div class="container">
+      <div class="container reveal">
 
         <div class="card" style="width: 18rem;">
             <img src="images/home/glazed-cake-doughnut.png" class="card-img-top2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Glazed Cake Donuts</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#donut-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -523,7 +514,7 @@
             <img src="images/home/pumpkin-doughnut.png" class="card-img-top2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Pumpkin Donuts</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#donut-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -531,7 +522,7 @@
             <img src="images/home/apple-cider-doughnut.png" class="card-img-top2" alt="...">
             <div class="card-body">
               <h5 class="card-title">Apple Cider Donuts</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#donut-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -649,10 +640,7 @@
                       <!-- Video -->
                       <div class="row">
                         <div class="ratio ratio-16x9">
-                          <video class="embed-responsive-item" controls autoplay muted>
-                            <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                            Your browser does not support the video tag.
-                          </video>
+                          <iframe width="1536" height="610" src="https://www.youtube.com/embed/aFaQ2cxYxbM" title="Homemade Glazed Donuts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                       </div>
 
@@ -782,10 +770,7 @@
                         <!-- Video -->
                         <div class="row">
                           <div class="ratio ratio-16x9">
-                            <video class="embed-responsive-item" controls autoplay muted>
-                              <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                              Your browser does not support the video tag.
-                            </video>
+                            <iframe width="1536" height="610" src="https://www.youtube.com/embed/6KH9WMzIf7c" title="Super-Easy Pumpkin Donuts  Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                           </div>
                         </div>
 
@@ -865,10 +850,7 @@
                     <!-- Video -->
                     <div class="row">
                       <div class="ratio ratio-16x9">
-                        <video class="embed-responsive-item" controls autoplay muted>
-                          <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/6KH9WMzIf7c" title="Super-Easy Pumpkin Donuts  Recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
@@ -886,13 +868,13 @@
     <!-- PIE SECTION -->
     <section id="pie">
       <h1>Pies</h1>
-      <div class="container">
+      <div class="container reveal">
 
         <div class="card">
             <img src="images/home/hutternutter-pie.png" class="card-img-top3" alt="...">
             <div class="card-body">
               <h5 class="card-title">Fluffernutter Pie</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#pie-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -900,7 +882,7 @@
             <img src="images/home/blueberry-lemon-cream-pie.png" class="card-img-top3" alt="...">
             <div class="card-body">
               <h5 class="card-title">Blueberry Lemon Cream Pie</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#pie-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -908,7 +890,7 @@
             <img src="images/home/cranberry-pie.png" class="card-img-top3" alt="...">
             <div class="card-body">
               <h5 class="card-title">Cranberry Pie</h5>
-              <a href="#" class="btn btn-outline-danger">See Recipe</a>
+              <a href="#pie-recipe" class="btn btn-outline-danger">See Recipe</a>
             </div>
         </div>
 
@@ -989,10 +971,7 @@
                     <!-- Video -->
                     <div class="row">
                       <div class="ratio ratio-16x9">
-                        <video class="embed-responsive-item" controls autoplay muted>
-                          <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/-ZZkKWfnNYY" title="Fluffernutter Pie recipe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
@@ -1086,10 +1065,7 @@
                     <!-- Video -->
                     <div class="row">
                       <div class="ratio ratio-16x9">
-                        <video class="embed-responsive-item" controls autoplay muted>
-                          <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/4YB0v73R6Ww" title="How To Make Blueberry Cream Pie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
@@ -1164,10 +1140,7 @@
                     <!-- Video -->
                     <div class="row">
                       <div class="ratio ratio-16x9">
-                        <video class="embed-responsive-item" controls autoplay muted>
-                          <source src="videos/Chocolate Cake.m4v" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
+                        <iframe width="1536" height="610" src="https://www.youtube.com/embed/NwRhhw1WO-E" title="How to Make the Best Cranberry Pie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                       </div>
                     </div>
 
@@ -1187,7 +1160,41 @@
   </main>
   
   <footer>
-    <p>All rights reserved.</p>
+    <div class="container">
+      <img src="images/home/footer-logo.png" alt="Footer Logo">
+      
+      <div class="row align-items-center">
+        
+        <div class="col">
+          <ul>
+            <li><strong>Cakes</strong></li>
+            <li><a href="#cake-recipe">Chocolate Cake</a></li>
+            <li><a href="#cake-recipe">Lemon Blueberry Cake</a></li>
+            <li><a href="#cake-recipe">Chocolate Raspberry Cheesecake</a></li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <ul>
+            <li><strong>Doughnuts</strong></li>
+            <li><a href="#donut-recipe">Glazed Cake Donut</a></li>
+            <li><a href="#donut-recipe">Pumpkin Donut</a></li>
+            <li><a href="#donut-recipe">Apple Cider Donut</a></li>
+          </ul>
+        </div>
+        
+        <div class="col">
+          <ul>
+            <li><strong>Pies</strong></li>
+            <li><a href="#pie-recipe">Fluffernutter Pie</a></li>
+            <li><a href="#pie-recipe">Blueberry Lemon Cream Pie</a></li>
+            <li><a href="#pie-recipe">Cranberry Pie</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+
   </footer>
   
 <a href="javascript:void(0);" id="backToTop" class="back-to-top">

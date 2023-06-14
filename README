@@ -1,1 +1,23 @@
-Type here
+README
+
+#Purpose of the Webpage
+	The main objective of the Roxy's Delight Webpage is to offer comprehensive information about delicious sweet treats, particularly cakes, donuts, and pies. Our goal is to provide users with detailed insights, including the specific ingredients needed, step-by-step cooking or baking instructions, visually appealing sample images, and helpful instructional videos to guide users throughout the process.
+
+	We strive to make it easy for users to access all the necessary information they need to create these delectable desserts. Whether you're a beginner or an experienced baker, our webpage aims to be a go-to resource, providing clear and concise instructions, along with engaging visuals, to ensure a delightful and successful baking experience.
+
+#Instructions
+1. First, extract the compressed file. This can be done by using extraction software such as WinRAR or 7-Zip.
+2. Once the file is extracted, locate the 'index.html' file. This file serves as the main webpage.
+3. To open the webpage, simply double-click on the 'index.html' file. It will automatically launch in your default web browser, displaying the content of the webpage.
+
+#Framework Used
+1. Bootstrap - simplifies the process of building modern and responsive websites by providing a comprehensive set of tools, styles, and components that streamline the development workflow and enhance the overall user experience. One notable feature may be the mobile-responsive components that allows the code to be responsive enough when it is accessed in mobile devices.
+2. Sass - 
+3. JQuery - 
+
+#Challenges Encountered
+Time-Management: As the initial submission date is more or less five(5) days, thus to learn the frameworks and to actually implement the code.
+
+
+
+
