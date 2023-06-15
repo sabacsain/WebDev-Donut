@@ -12,7 +12,7 @@ README
 
 #Framework Used
 1. Bootstrap - simplifies the process of building modern and responsive websites by providing a comprehensive set of tools, styles, and components that streamline the development workflow and enhance the overall user experience. One notable feature may be the mobile-responsive components that allows the code to be responsive enough when it is accessed in mobile devices.
-2. Sass - 
+2. Sass - Sass facilitates you to write clean, easy and less CSS in a programming construct. It contains fewer codes so you can write CSS quicker. It is more stable, powerful, and elegant because it is an extension of CSS. So, it is easy for designers and developers to work more efficiently and quickly.
 3. JQuery - jQuery is to make it easier to include JavaScript into web design. It condenses a large number of lines of JavaScript code into single-line functions for performing numerous basic tasks. Web development is made easier with jQuery's 'utility' features. They reduce the amount of JavaScript code that programmers need to write in order to make DOM (Document Object Model) interactions quickly. jQuery makes animation simple by utilizing CSS, HTML and JavaScript. Using this method, it can produce excellent-looking outcomes.
 
 #Challenges Encountered
